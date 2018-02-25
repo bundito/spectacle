@@ -1,0 +1,7 @@
+# Hashes of file build rules.
+1f940d4c8e69c5cb120ad1e28f8deb7b CMakeFiles/fetch-translations
+fa9fc470acc5a0e23ade4b3ec630ce78 CMakeFiles/uninstall
+eed0ca7f5f6ffd37d3d2e24cf2f0ec7a doc/CMakeFiles/doc-index-cache-bz2
+12682e4ce35b51b764b37d4d4ba84a69 doc/index.cache.bz2
+b62a9d97eb407905f22fc1135c93c819 releaseme
+badbbdb6c770a7da3921d7eb4b1842da src/CMakeFiles/spectacle_automoc

@@ -73,9 +73,9 @@ int main(int argc, char **argv)
         {{QStringLiteral("g"), QStringLiteral("gui")},               i18n("Start in GUI mode (default)")},
         {{QStringLiteral("b"), QStringLiteral("background")},        i18n("Take a screenshot and exit without showing the GUI")},
         {{QStringLiteral("s"), QStringLiteral("dbus")},              i18n("Start in DBus-Activation mode")},
-        {{QStringLiteral("n"), QStringLiteral("nonotify")},          i18n("In background mode, do not pop up a notification when the screenshot is taken")},
-        {{QStringLiteral("o"), QStringLiteral("output")},            i18n("In background mode, save image to specified file"), QStringLiteral("fileName")},
-        {{QStringLiteral("d"), QStringLiteral("delay")},             i18n("In background mode, delay before taking the shot (in milliseconds)"), QStringLiteral("delayMsec")},
+        {{QStringLiteral("n"), QStringLiteral("nonotify")},          i18n("Take a screenshot and save it with an automatic filename, with no notification or GUI.")},
+        {{QStringLiteral("o"), QStringLiteral("output")},            i18n("Take a screenshot and save it to the specified filename."), QStringLiteral("fileName")},
+        {{QStringLiteral("d"), QStringLiteral("delay")},             i18n("Delay before automatically taking the shot (in seconds)"), QStringLiteral("delaySeconds")},
         {{QStringLiteral("w"), QStringLiteral("onclick")},           i18n("Wait for a click before taking screenshot. Invalidates delay")}
     });
 
@@ -101,13 +101,19 @@ int main(int argc, char **argv)
 
     SpectacleCore::StartMode startMode = SpectacleCore::GuiMode;
     bool notify = true;
-    qint64 delayMsec = 0;
+    qint64 delaySeconds = 0;
     QString fileName = QString();
 
     if (parser.isSet(QStringLiteral("background"))) {
         startMode = SpectacleCore::BackgroundMode;
+    } else if (parser.isSet(QStringLiteral("nonotify"))) {
+        startMode = SpectacleCore::BackgroundMode;
     } else if (parser.isSet(QStringLiteral("dbus"))) {
         startMode = SpectacleCore::DBusMode;
+    } else if (parser.isSet(QStringLiteral("output"))) {
+        startMode = SpectacleCore::BackgroundMode;
+        fileName = parser.value(QStringLiteral("output"));
+        notify = false;
     }
 
     switch (startMode) {
@@ -116,20 +122,18 @@ int main(int argc, char **argv)
             notify = false;
         }
 
-        if (parser.isSet(QStringLiteral("output"))) {
-            fileName = parser.value(QStringLiteral("output"));
-        }
+
 
         if (parser.isSet(QStringLiteral("delay"))) {
             bool ok = false;
-            qint64 delayValue = parser.value(QStringLiteral("delay")).toLongLong(&ok);
+            qint64 delayValue = (parser.value(QStringLiteral("delay")).toLongLong(&ok) * 1000);
             if (ok) {
-                delayMsec = delayValue;
+                delaySeconds = delayValue;
             }
         }
 
         if (parser.isSet(QStringLiteral("onclick"))) {
-            delayMsec = -1;
+            delaySeconds = -1;
         }
     case SpectacleCore::DBusMode:
         app.setQuitOnLastWindowClosed(false);
@@ -139,7 +143,7 @@ int main(int argc, char **argv)
 
     // release the kraken
 
-    SpectacleCore core(startMode, grabMode, fileName, delayMsec, notify);
+    SpectacleCore core(startMode, grabMode, fileName, delaySeconds, notify);
     QObject::connect(&core, &SpectacleCore::allDone, qApp, &QApplication::quit);
 
     // create the dbus connections

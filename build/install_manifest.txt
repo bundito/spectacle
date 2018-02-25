@@ -1,0 +1,17 @@
+/home/bundito/projects/testing/bin/spectacle
+/home/bundito/projects/testing/share/dbus-1/services/org.kde.Spectacle.service
+/home/bundito/projects/testing/share/dbus-1/interfaces/org.kde.Spectacle.xml
+/home/bundito/projects/testing/share/applications/org.kde.spectacle.desktop
+/home/bundito/projects/testing/share/knotifications5/spectacle.notifyrc
+/home/bundito/projects/testing/share/khotkeys/spectacle.khotkeys
+/home/bundito/projects/testing/share/metainfo/org.kde.spectacle.appdata.xml
+/home/bundito/projects/testing/share/icons/hicolor/16x16/apps/spectacle.png
+/home/bundito/projects/testing/share/icons/hicolor/22x22/apps/spectacle.png
+/home/bundito/projects/testing/share/icons/hicolor/32x32/apps/spectacle.png
+/home/bundito/projects/testing/share/icons/hicolor/48x48/apps/spectacle.png
+/home/bundito/projects/testing/share/icons/hicolor/scalable/apps/spectacle.svgz
+/home/bundito/projects/testing/share/doc/HTML/en/spectacle/index.cache.bz2
+/home/bundito/projects/testing/share/doc/HTML/en/spectacle/index.docbook
+/home/bundito/projects/testing/share/doc/HTML/en/spectacle/ApplicationPreferences.png
+/home/bundito/projects/testing/share/doc/HTML/en/spectacle/MainWindow.png
+/home/bundito/projects/testing/share/doc/HTML/en/spectacle/SaveOptions.png

@@ -183,6 +183,9 @@ void SpectacleCore::screenshotUpdated(const QPixmap &pixmap)
     switch (mStartMode) {
     case BackgroundMode:
     case DBusMode:
+
+
+
         {
             if (mNotify) {
                 connect(mExportManager, &ExportManager::imageSaved, this, &SpectacleCore::doNotify);
