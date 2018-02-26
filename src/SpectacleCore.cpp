@@ -35,6 +35,11 @@
 #include <KConfigGroup>
 #include <KSharedConfig>
 
+#include <thread>         // std::this_thread::sleep_for
+#include <chrono>         // std::chrono::seconds
+
+
+
 #include "Config.h"
 #include "PlatformBackends/DummyImageGrabber.h"
 #ifdef XCB_FOUND
@@ -257,11 +262,21 @@ void SpectacleCore::doNotify(const QUrl &savedAt)
     notify->setActions({i18nc("Open the screenshot we just saved", "Open")});
     notify->setUrls({savedAt});
 
+    // TODO: Have others test with and without this delay-for-delay (maybe it's my machine?)
+    // Threads seem to need a moment to catch up before firing the notification.
+    // Notification dependable when execution paused during debugging, but
+    // inconsistent when running straight through. Very quirky.
+    // Also cannot change workspaces during delay or the notification fails. Quirky!
+    if (mStartMode == BackgroundMode && mNotify) {
+        std::this_thread::sleep_for (std::chrono::seconds(2));
+    }
+
     connect(notify, &KNotification::action1Activated, this, [this, savedAt] {
         new KRun(savedAt, nullptr);
         QTimer::singleShot(250, this, &SpectacleCore::allDone);
     });
     connect(notify, &QObject::destroyed, this, &SpectacleCore::allDone);
+
 
     notify->sendEvent();
 }

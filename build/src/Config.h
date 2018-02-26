@@ -5,7 +5,7 @@
 #define XCB_FOUND 1
 
 /* Define to 1 if we have KIPI */
-/* #undef KIPI_FOUND */
+#define KIPI_FOUND 1
 
 /* Define to 1 if we have Purpose */
 /* #undef PURPOSE_FOUND */

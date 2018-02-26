@@ -70,13 +70,14 @@ int main(int argc, char **argv)
         {{QStringLiteral("u"), QStringLiteral("windowundercursor")}, i18n("Capture the window currently under the cursor, including parents of pop-up menus")},
         {{QStringLiteral("t"), QStringLiteral("transientonly")},     i18n("Capture the window currently under the cursor, excluding parents of pop-up menus")},
         {{QStringLiteral("r"), QStringLiteral("region")},            i18n("Capture a rectangular region of the screen")},
-        {{QStringLiteral("g"), QStringLiteral("gui")},               i18n("Start in GUI mode (default)")},
-        //{{QStringLiteral("b"), QStringLiteral("background")},        i18n("Take a screenshot and exit without showing the GUI")},
-        {{QStringLiteral("s"), QStringLiteral("dbus")},              i18n("Start in DBus-Activation mode")},
+        // Parser option to start in GUI mode removed as redundant, as that's the default mode
         {{QStringLiteral("n"), QStringLiteral("nonotify")},          i18n("Take a screenshot and save it with an automatic filename, with no notification or GUI.")},
         {{QStringLiteral("o"), QStringLiteral("output")},            i18n("Take a screenshot and save it to the specified filename."), QStringLiteral("filename")},
+        // "delay" input changed to seconds instead of milliseconds (more user-friendly)
         {{QStringLiteral("d"), QStringLiteral("delay")},             i18n("Delay before automatically taking the shot (in seconds)"), QStringLiteral("delaySeconds")},
-        {{QStringLiteral("w"), QStringLiteral("onclick")},           i18n("Wait for a mouse click before taking screenshot.")}
+        {{QStringLiteral("w"), QStringLiteral("onclick")},           i18n("Wait for a mouse click before taking screenshot.")},
+        // DBus option moved to bottom of help output, since it's the most obscure
+        {{QStringLiteral("s"),QStringLiteral("dbus")},               i18n("Start in DBus-Activation mode")},
     });
 
     parser.process(app);
@@ -120,12 +121,15 @@ int main(int argc, char **argv)
     } else if (parser.isSet(QStringLiteral("delay"))) {
         bool ok;
         startMode = SpectacleCore::BackgroundMode;
-        delayMsec = (parser.value(QStringLiteral("delay")).toLong(&ok) * 1000);
+        // Human-friendly seconds back to computer-friendly milliseconds
+        delayMsec = (parser.value(QStringLiteral("delay")).toLongLong(&ok) * 1000);
+        // ok variable automatically set by string->int conversion (handy!)
         if (!ok) {
-            qDebug() << i18n("ERROR: Invalid value for <delaySeconds>");
+            QTextStream(stdout) << i18n("ERROR: Invalid value for ") << "<delaySeconds>\n" << endl;
             app.exit();
         }
     } else if (parser.isSet(QStringLiteral("onclick"))) {
+            startMode = SpectacleCore::BackgroundMode;
             delayMsec = -1;
     };
 

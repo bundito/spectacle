@@ -15,6 +15,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bundito/projects/spectacle/src/Gui/SettingsDialog/SettingsDialog.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/SettingsDialog.cpp.o"
   "/home/bundito/projects/spectacle/src/Gui/SettingsDialog/SettingsPage.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/SettingsPage.cpp.o"
   "/home/bundito/projects/spectacle/src/Gui/SmartSpinBox.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/Gui/SmartSpinBox.cpp.o"
+  "/home/bundito/projects/spectacle/src/KipiInterface/KSGKipiImageCollectionSelector.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o"
+  "/home/bundito/projects/spectacle/src/KipiInterface/KSGKipiImageCollectionShared.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o"
+  "/home/bundito/projects/spectacle/src/KipiInterface/KSGKipiInfoShared.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o"
+  "/home/bundito/projects/spectacle/src/KipiInterface/KSGKipiInterface.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o"
   "/home/bundito/projects/spectacle/src/Main.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/Main.cpp.o"
   "/home/bundito/projects/spectacle/src/PlatformBackends/DummyImageGrabber.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/PlatformBackends/DummyImageGrabber.cpp.o"
   "/home/bundito/projects/spectacle/src/PlatformBackends/ImageGrabber.cpp" "/home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/PlatformBackends/ImageGrabber.cpp.o"
@@ -73,7 +77,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/KF5/KWidgetsAddons"
   "/usr/include/KF5/KNotifications"
   "/usr/include/KF5/KConfigCore"
-  "/usr/include/KF5/KI18n"
+  "/usr/local/include/KF5/KI18n"
+  "/usr/local/include/KF5"
   "/usr/include/KF5/KIOWidgets"
   "/usr/include/KF5/KIOCore"
   "/usr/include/KF5/KService"
@@ -87,7 +92,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/KF5/KConfigGui"
   "/usr/include/KF5/KAuth"
   "/usr/local/include/KF5/KDeclarative"
-  "/usr/local/include/KF5"
   "/usr/include/KF5/KPackage"
   "/usr/local/include/KF5/KNewStuff3"
   "/usr/local/include/KF5/KNewStuff3/KNS3"
@@ -96,6 +100,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include/KF5/KNewStuff3/KNSCore"
   "/usr/include/KF5/Attica"
   "/usr/include/x86_64-linux-gnu/qt5/QtX11Extras"
+  "/usr/include/KF5/KIPI"
+  "/usr/include/KF5/KIPI/kipi"
   )
 
 # Targets to which this target links.

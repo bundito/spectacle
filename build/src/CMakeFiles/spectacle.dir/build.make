@@ -489,9 +489,105 @@ src/CMakeFiles/spectacle.dir/QuickEditor/QuickEditor.cpp.o.provides: src/CMakeFi
 src/CMakeFiles/spectacle.dir/QuickEditor/QuickEditor.cpp.o.provides.build: src/CMakeFiles/spectacle.dir/QuickEditor/QuickEditor.cpp.o
 
 
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o: src/CMakeFiles/spectacle.dir/flags.make
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o: ../src/KipiInterface/KSGKipiInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o -c /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiInterface.cpp
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.i"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiInterface.cpp > CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.i
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.s"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiInterface.cpp -o CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.s
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o.requires
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o.provides: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/spectacle.dir/build.make src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o.provides.build
+.PHONY : src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o.provides
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o.provides.build: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o
+
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o: src/CMakeFiles/spectacle.dir/flags.make
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o: ../src/KipiInterface/KSGKipiInfoShared.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o -c /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiInfoShared.cpp
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.i"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiInfoShared.cpp > CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.i
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.s"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiInfoShared.cpp -o CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.s
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o.requires
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o.provides: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/spectacle.dir/build.make src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o.provides.build
+.PHONY : src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o.provides
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o.provides.build: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o
+
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o: src/CMakeFiles/spectacle.dir/flags.make
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o: ../src/KipiInterface/KSGKipiImageCollectionShared.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o -c /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiImageCollectionShared.cpp
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.i"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiImageCollectionShared.cpp > CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.i
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.s"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiImageCollectionShared.cpp -o CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.s
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o.requires
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o.provides: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/spectacle.dir/build.make src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o.provides.build
+.PHONY : src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o.provides
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o.provides.build: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o
+
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o: src/CMakeFiles/spectacle.dir/flags.make
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o: ../src/KipiInterface/KSGKipiImageCollectionSelector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o -c /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiImageCollectionSelector.cpp
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.i"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiImageCollectionSelector.cpp > CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.i
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.s"
+	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bundito/projects/spectacle/src/KipiInterface/KSGKipiImageCollectionSelector.cpp -o CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.s
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o.requires
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o.provides: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/spectacle.dir/build.make src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o.provides.build
+.PHONY : src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o.provides
+
+src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o.provides.build: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o
+
+
 src/CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.o: src/CMakeFiles/spectacle.dir/flags.make
 src/CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.o: ../src/PlatformBackends/X11ImageGrabber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.o"
 	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.o -c /home/bundito/projects/spectacle/src/PlatformBackends/X11ImageGrabber.cpp
 
 src/CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.i: cmake_force
@@ -515,7 +611,7 @@ src/CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.o.provides.bui
 
 src/CMakeFiles/spectacle.dir/spectacle_automoc.cpp.o: src/CMakeFiles/spectacle.dir/flags.make
 src/CMakeFiles/spectacle.dir/spectacle_automoc.cpp.o: src/spectacle_automoc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/spectacle.dir/spectacle_automoc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/spectacle.dir/spectacle_automoc.cpp.o"
 	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spectacle.dir/spectacle_automoc.cpp.o -c /home/bundito/projects/spectacle/build/src/spectacle_automoc.cpp
 
 src/CMakeFiles/spectacle.dir/spectacle_automoc.cpp.i: cmake_force
@@ -539,7 +635,7 @@ src/CMakeFiles/spectacle.dir/spectacle_automoc.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/spectacle.dir/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp.o: src/CMakeFiles/spectacle.dir/flags.make
 src/CMakeFiles/spectacle.dir/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp.o: src/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/spectacle.dir/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/spectacle.dir/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp.o"
 	cd /home/bundito/projects/spectacle/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spectacle.dir/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp.o -c /home/bundito/projects/spectacle/build/src/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp
 
 src/CMakeFiles/spectacle.dir/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp.i: cmake_force
@@ -581,6 +677,10 @@ spectacle_OBJECTS = \
 "CMakeFiles/spectacle.dir/Gui/SettingsDialog/SaveOptionsPage.cpp.o" \
 "CMakeFiles/spectacle.dir/Gui/SettingsDialog/GeneralOptionsPage.cpp.o" \
 "CMakeFiles/spectacle.dir/QuickEditor/QuickEditor.cpp.o" \
+"CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o" \
+"CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o" \
+"CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o" \
+"CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o" \
 "CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.o" \
 "CMakeFiles/spectacle.dir/spectacle_automoc.cpp.o" \
 "CMakeFiles/spectacle.dir/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp.o"
@@ -606,6 +706,10 @@ src/spectacle: src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/SettingsPage.cpp.
 src/spectacle: src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/SaveOptionsPage.cpp.o
 src/spectacle: src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/GeneralOptionsPage.cpp.o
 src/spectacle: src/CMakeFiles/spectacle.dir/QuickEditor/QuickEditor.cpp.o
+src/spectacle: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o
+src/spectacle: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o
+src/spectacle: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o
+src/spectacle: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o
 src/spectacle: src/CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.o
 src/spectacle: src/CMakeFiles/spectacle.dir/spectacle_automoc.cpp.o
 src/spectacle: src/CMakeFiles/spectacle.dir/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp.o
@@ -619,7 +723,7 @@ src/spectacle: /usr/lib/x86_64-linux-gnu/libxcb-shape.so
 src/spectacle: /usr/lib/x86_64-linux-gnu/libxcb-shm.so
 src/spectacle: /usr/lib/x86_64-linux-gnu/libxcb.so
 src/spectacle: src/CMakeFiles/spectacle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable spectacle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bundito/projects/spectacle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable spectacle"
 	cd /home/bundito/projects/spectacle/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spectacle.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -645,6 +749,10 @@ src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/Gui/Settings
 src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/SaveOptionsPage.cpp.o.requires
 src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/GeneralOptionsPage.cpp.o.requires
 src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/QuickEditor/QuickEditor.cpp.o.requires
+src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInterface.cpp.o.requires
+src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiInfoShared.cpp.o.requires
+src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionShared.cpp.o.requires
+src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/KipiInterface/KSGKipiImageCollectionSelector.cpp.o.requires
 src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/PlatformBackends/X11ImageGrabber.cpp.o.requires
 src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/spectacle_automoc.cpp.o.requires
 src/CMakeFiles/spectacle.dir/requires: src/CMakeFiles/spectacle.dir/CMakeFiles/spectacle.dir/qrc_QmlResources.cpp.o.requires

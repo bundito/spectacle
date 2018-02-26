@@ -9,6 +9,8 @@
 #include "moc_SettingsDialog.cpp"
 #include "moc_SettingsPage.cpp"
 #include "moc_SmartSpinBox.cpp"
+#include "moc_KSGKipiImageCollectionSelector.cpp"
+#include "moc_KSGKipiInterface.cpp"
 #include "moc_DummyImageGrabber.cpp"
 #include "moc_ImageGrabber.cpp"
 #include "moc_KWinWaylandImageGrabber.cpp"
